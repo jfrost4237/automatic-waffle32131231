@@ -28,13 +28,13 @@ std::vector<double>& get_vector(std::string subject) {
 	if (subject == "Dutch") return NL;
 	if (subject == "English") return EN;
 	if (subject == "German") return DU;
-	if (subject == "Math") MATH.push_back(grade);
-	if (subject == "CKV") CKV.push_back(grade);
-	if (subject == "IT") IT.push_back(grade);
-	if (subject == "Physics") NA.push_back(grade);
-	if (subject == "Philosophy") LV.push_back(grade);
-	if (subject == "Chemistry") CHEM.push_back(grade);
-	if (subject == "Society") MAAT.push_back(grade);
+	if (subject == "Math") return MATH;
+	if (subject == "CKV") return CKV;
+	if (subject == "IT") return IT;
+	if (subject == "Physics") return NA;
+	if (subject == "Philosophy") return LV;
+	if (subject == "Chemistry") return CHEM;
+	if (subject == "Society") return MAAT;
 }
 
 
@@ -48,7 +48,7 @@ void enter_grades(){
 	for (int i = 0; i < amount_of_grades; i++) {
 		std::cin >> grade;
 		std::cout << "\n";
-		get_vector();
+		get_vector(subject);
 
 
 		/*for (int i = 0; i < NL.size(); ++i) {
