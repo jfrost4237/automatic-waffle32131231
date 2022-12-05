@@ -25,7 +25,7 @@ extern double grade;
 
 extern std::string subject;
 
-std::vector<double>& get_vector();
+std::vector<double>& get_vector(std::string subject);
 
 void enter_grades();
 
