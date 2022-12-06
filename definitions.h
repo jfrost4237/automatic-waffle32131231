@@ -1,5 +1,7 @@
 #include "include.h"
 
+
+
 extern std::string file;
 
 extern std::vector<double>grades;
@@ -17,18 +19,19 @@ extern std::vector<double>CHEM;
 extern std::vector<double>MAAT;
 
 
-//int amount_of_grades;
 
-extern std::ofstream outdata;
+
+//extern std::ofstream outdata;
 
 extern double grade;
 
 extern std::string subject;
 
+void export_data();
+
 std::vector<double>& get_vector(std::string subject);
 
 void enter_grades();
-
 
 void push_back_grade();
 
