@@ -14,7 +14,7 @@ void Start() {
 }
 
 
-    /*void CalculateAverage() {
+    /*double CalculateAverage() {
 
         int x = 0;
         return x;
