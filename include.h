@@ -8,4 +8,6 @@
 #include "windows.h"
 #include <thread>
 #include <unordered_map>
+#include <numeric>
+#include <algorithm>
 
