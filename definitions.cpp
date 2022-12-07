@@ -31,6 +31,26 @@ std::vector<double>& get_vector(std::string subject) { // no idea what the fuck 
 	else { std::cout << "unknown subject\n"; }
 }
 
+void read_data() {
+	std::ifstream indata;
+	std::string values;
+	indata.open(file); // opens the file
+	if (!indata) { // file couldn't be opened
+		std::cout  << "Error: file could not be opened\n";
+		abort;
+	}
+	indata >> values;
+	while (!indata.eof()) { // keep reading until end-of-file
+		std::cout << "The next value is " << values << "\n";
+		indata >> values; // sets EOF flag if no value found
+	}
+	indata.close();
+	std::cout << "End of file reached" << "\n";
+
+	std::cout << "values: " << values << "\n=======================================================\n";
+}
+
+
 
 
 void export_data() {
