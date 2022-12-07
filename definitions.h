@@ -27,11 +27,15 @@ extern double grade;
 
 extern std::string subject;
 
+double CalculateAverage();
+
+void print_vector(std::string);
+
 void export_data();
 
 std::vector<double>& get_vector(std::string subject);
 
 void enter_grades();
 
-void push_back_grade();
+void start_grading();
 
