@@ -7,7 +7,7 @@ void Start() {
         std::cout << "enter file name: ";
         std::cin >> file;
         std::cout << "\n";
-    
+    read_data();
 
     int choice = 0;
     std::cout << "1 = Enter grades\n2 = Print table of grades\n3 = Exit\n\nenter choice: ";
